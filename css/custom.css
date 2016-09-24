@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+.bara{
+	font-weight:bold;
+	font-family:"Microsoft YaHei";
+	color:black;
+}
+
+.bara:hover{
+	color:rgba(7,236,4,1.00);
+}
+
+.barli{
+	padding:0 20px;
+}
+
+.firstBar{
+	margin-left:100px
+}
