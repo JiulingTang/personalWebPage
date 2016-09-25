@@ -41,8 +41,24 @@
 	margin-top:140px;
 }
 
-.pinftitle{
+.pinftitle,.skilltitle,.porttitle{
 	background:url(../resource/image/titleTag.jpg) no-repeat;
 	background-size:100% 60px;
 	height:60px;
 }
+
+.pinftitle>h4,.skilltitle>h4,.porttitle>h4{
+	position:absolute;
+	margin-top:12px;
+	text-align:center;
+	width:250px;
+	font-family:"Microsoft YaHei";
+	word-spacing:5px;
+	color:rgba(228,228,228,1.00);
+	font-weight:bold;
+	font-size:20px
+}
+.skilldiv,.portdiv{
+	margin-top:20px;
+}
+
