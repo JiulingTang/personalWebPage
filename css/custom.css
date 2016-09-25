@@ -17,3 +17,32 @@
 .firstBar{
 	margin-left:100px
 }
+
+.enbutton,.chbutton{
+	border:hidden 0;
+	background:transparent	
+	
+}
+.enbutton:hover,.chbutton:hover{
+	background:transparent;
+	color:red	
+}
+
+.enbutton.visited,.chbutton.visited{
+	color:red;	
+}
+
+.lanlable{
+	margin-top:6px;
+	font-weight:bold;
+}
+
+.pinfdiv{
+	margin-top:140px;
+}
+
+.pinftitle{
+	background:url(../resource/image/titleTag.jpg) no-repeat;
+	background-size:100% 60px;
+	height:60px;
+}
