@@ -1,5 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
+@font-face{
+   font-family: Nunito-Regular;
+    src: url(../fonts/Nunito-Regular.ttf) format('truetype');
+}
 .bara{
 	font-weight:bold;
 	font-family:"Microsoft YaHei";
@@ -49,16 +53,95 @@
 
 .pinftitle>h4,.skilltitle>h4,.porttitle>h4{
 	position:absolute;
-	margin-top:12px;
 	text-align:center;
 	width:250px;
 	font-family:"Microsoft YaHei";
 	word-spacing:5px;
 	color:rgba(228,228,228,1.00);
 	font-weight:bold;
-	font-size:20px
+	font-size:1.25em;
 }
 .skilldiv,.portdiv{
 	margin-top:20px;
+}
+
+#about{
+	font-size:14px;
+	width:60%
+}
+
+#about hgroup, p{
+	padding:0;
+	margin:0;
+}
+#introduction ul{
+	list-style:none;
+}
+#introduction ul li {
+	background:#efefef;
+    border-radius: 4px;
+	-moz-border-radius:4px;
+	-o-border-radius:4px;
+	-webkit-border-radius:4px;
+    color: #666666;
+    font-size: 11px;
+  	margin-bottom: 10px;
+	margin-top: 9px;
+	padding: 6px 44px 5px 10px;
+	border-left:3px solid #cccccc;
+}
+
+#introduction ul li span{
+	font-weight:bold;
+}
+
+.info{
+	float:left;
+	margin-right:38px;
+}
+
+#about h1{
+	font-family: "Signika";
+	font-weight:bold;
+	font-size:24px;
+	color:#CD5353;
+	margin:0 0 10px 0;
+	padding:0;
+
+}
+
+#about h4{
+	font-size:16px;
+	color:#666;
+	font-weight:bold;
+	float:left;
+	margin-left:20px;
+	width:85%;
+}
+
+#about h6{
+	font-size:14px;
+	color:#333;
+	font-weight:bold;
+	font-style:italic;
+	float:left;
+}
+
+.skillitemdiv{
+	width:20%;
+	margin-right:5%;
+	float:left;
+}
+
+.skillitemdiv h4{
+	
+  font-weight:700;
+  font-family: Nunito-Regular;
+  letter-spacing: 1px;
+  font-size:14px
+}
+
+.progress-bar-danger {
+  box-shadow: none;
 }
 
