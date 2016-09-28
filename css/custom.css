@@ -145,3 +145,34 @@
   box-shadow: none;
 }
 
+.portitemdiv{
+	width:60%;
+	margin:0 auto;
+}
+
+.portitemdiv img{
+	width:100%;
+}
+
+.modal h5,.portitemdiv h5{
+	text-align:center;
+	font-family: Nunito-Regular;
+	font-weight:bold;
+	font-size:20px;
+	color:#EF7205
+}
+
+.modal-body{
+	background:#FFFFFF
+}
+
+.modal img{
+	height:900px;
+	
+}
+
+.modal-lg{
+	width:1200px;
+}
+
+
