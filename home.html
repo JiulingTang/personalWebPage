@@ -31,6 +31,7 @@
             	Personal Information
             </h4>
         </div>
+		<a href="./resource/resume.pdf" class="cvLink">My Resume</a>
         <div id="about" class="clearfix">
 			<!-- Introduction -->
 			<section id="introduction" class="clearfix">
@@ -41,9 +42,9 @@
 					<li><span>Name</span> : Jiuling Tang</li>
                     <li><span>Hometown</span> : Chongqing - China</li>
 					<li><span>Location</span> : Montreal - Canada</li>
-					</ul>
-				</section> 
-				<section id="education">
+				</ul>
+			 </section>
+			<section id="education">
 					<h1>&nbsp;Education</h1>
 						<hgroup>
                         	<h6>2010-2014</h6>
@@ -56,7 +57,7 @@
 							
 						</hgroup>
 						
-				</section>
+			</section>
 			</div>
     </div>
      <div id="skill" class="skilldiv container" >
@@ -173,11 +174,11 @@
               <div class="carousel-inner" role="listbox">
                 <div class="item active">
                 	<h5>Mini Student Information System</h5>
-                 	<a style="cursor:pointer" role="link" data-toggle="modal" data-target="#portmodal" data-porttitle="minisis"><img src="resource/image/minisis1.png"/></a>
+                 	<a style="cursor:pointer" role="link" data-toggle="modal" data-target="#portmodal" data-porttitle="minisis" data-index=0><img src="resource/image/minisis1.png"/></a>
                 </div>
                 <div class="item">
                 	<h5>Worker Finder Website</h5>
-                 	<a style="cursor:pointer" role="link" data-toggle="modal" data-target="#portmodal" data-porttitle="workfinder"><img src="resource/image/workfinder1.png"></a>
+                 	<a style="cursor:pointer" role="link" data-toggle="modal" data-target="#portmodal" data-porttitle="workfinder" data-index=1><img src="resource/image/workfinder1.png"></a>
                 </div>
               </div>
               <a class="left carousel-control" href="#portcar" role="button" data-slide="prev">
@@ -194,7 +195,7 @@
          <div id="portmodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modellable" aria-hidden="true">
           	<div class="modal-dialog modal-lg">
            	 <div class="modal-content">
-      			 <h5 class="modal-title" id="modellable">Mini Student Information System</h5>
+      			 <h5 class="modal-title" id="modellable"></h5>
                   <div class="modal-body">
                   	<div>
                       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="display:inline-block;vertical-align:top;width:80%">
@@ -205,13 +206,13 @@
                           </ol>
                            <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <img class="portimg" style="height:400px;width:100%" src="resource/image/minisis1.png"/ alt="image1">  
+                                    <img class="portimg" style="height:400px;width:100%" src="resource/image/minisis1.png" alt="image1"/>
                                 </div>
                                 <div class="item">
-                                     <img class="portimg" style="height:400px;width:100%"src="resource/image/minisis2.png"/ alt="image2">   
+                                     <img class="portimg" style="height:400px;width:100%"src="resource/image/minisis2.png" alt="image2"/>
                                 </div>
                                 <div class="item">
-                                     <img class="portimg" style="height:400px;width:100%" src="resource/image/minisis3.png"/ alt="image3">   
+                                     <img class="portimg" style="height:400px;width:100%" src="resource/image/minisis3.png" alt="image3"/>
                                 </div>
                                 <div style="height:50px;background:#3E3E3E">
                                     
@@ -220,11 +221,11 @@
                   	
                   	</div>
                   <div style="display:inline-block;width:15%;">
-                  	<h4>Description</h4>
-                  	This is a web appication. There are two kinds of users, student and administrator. Student can register/drop courses and check their grade. Administrator can register students, add grade for students, add/drop courses for students and add courses.
+                  	<h4 >Description</h4>
+                  	<span id="description">This is a web appication. There are two kinds of users, student and administrator. Student can register/drop courseand check their grade. Administrator can register students, add grade for students, add/drop courses for students and add courses.</span>
                     <br/>
-                    <h4>Technologies</h4>
-                    Java, JSP, Java Servlet, HTML, CSS, JavaScript, Jquery, AJAX, Bootstrap
+                    <h4 >Technologies</h4>
+                    <span id="technologies">Java, JSP, Java Servlet, HTML, CSS, JavaScript, Jquery, AJAX, Bootstrap</span>
                   </div>
                </div>   
             </div>
@@ -251,12 +252,18 @@
 
 <script type="text/javascript">
 	titlelist=['Mini Student Information System','Worker Finder Website'];
+	descriptionlist=['This is a web appication. There are two kinds of users, student and administrator. Student can register/drop courseand check their grade. Administrator can register students, add grade for students, add/drop courses for students and add courses.','This is a web application for finding workers to do some task. Users can post a task to find workers and also take tasks posted by other users as a worker. ']
+	technologylist=[' Java, JSP, Java Servlet, HTML, CSS, JavaScript, Jquery, AJAX, Bootstrap',' Java, Play, HTML, CSS, JavaScript, Jquery, AJAX, Bootstrap']
 	$("#portmodal").on("show.bs.modal",function(e){
 		var porttitle=e.relatedTarget.getAttribute("data-porttitle");
+		var index=e.relatedTarget.getAttribute("data-index");
 		var imgs=document.getElementsByClassName('portimg');
 		for (var i=0;i<imgs.length;i++){
 			imgs[i].setAttribute('src','resource/image/'+porttitle+(i+1)+'.png')
 		}
+		$("#modellable").html(titlelist[index]);
+		$("#description").html(descriptionlist[index]);
+		$("#technologies").html(technologylist[index]);
 	})
 </script>
 </html>
