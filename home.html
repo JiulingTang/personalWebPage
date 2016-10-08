@@ -10,7 +10,7 @@
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="border-bottom:rgba(149,149,149,1.00) solid 1px">
   		<div class="container"   >
-        	<div class="navbar-header" style="height">
+        	<div class="navbar-header">
             	<img src="resource/image/logo.gif" alt="logo" style="height:100px"  class="navbar-brand">
             </div>	
             <ul style="margin-top:30px;" class="nav navbar-nav firstBar" >
@@ -230,8 +230,9 @@
                </div>   
             </div>
           </div>
-        </div>
-    </div>
+       	 </div>
+    	</div>
+	</div>
     <div style="margin-top:20px;" class="container">
     	 <div style="background:#F1A56B;height:1px">
         </div>
@@ -240,31 +241,6 @@
 </body>
 <script type="text/ecmascript" src="js/jquery-3.1.1.min.js"></script>
 <script type="text/ecmascript" src="js/bootstrap.min.js"></script>
-
-<script type="text/javascript">
-			$(document).ready(function() {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('body').animate({scrollTop:$(this.hash).offset().top-110},500);
-				});
-			});
-</script>
-
-<script type="text/javascript">
-	titlelist=['Mini Student Information System','Worker Finder Website'];
-	descriptionlist=['This is a web appication. There are two kinds of users, student and administrator. Student can register/drop courseand check their grade. Administrator can register students, add grade for students, add/drop courses for students and add courses.','This is a web application for finding workers to do some task. Users can post a task to find workers and also take tasks posted by other users as a worker. ']
-	technologylist=[' Java, JSP, Java Servlet, HTML, CSS, JavaScript, Jquery, AJAX, Bootstrap',' Java, Play, HTML, CSS, JavaScript, Jquery, AJAX, Bootstrap']
-	$("#portmodal").on("show.bs.modal",function(e){
-		var porttitle=e.relatedTarget.getAttribute("data-porttitle");
-		var index=e.relatedTarget.getAttribute("data-index");
-		var imgs=document.getElementsByClassName('portimg');
-		for (var i=0;i<imgs.length;i++){
-			imgs[i].setAttribute('src','resource/image/'+porttitle+(i+1)+'.png')
-		}
-		$("#modellable").html(titlelist[index]);
-		$("#description").html(descriptionlist[index]);
-		$("#technologies").html(technologylist[index]);
-	})
-</script>
+<script type="text/javascript" src="js/custom.js"></script>
 </html>
 
