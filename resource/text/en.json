@@ -1,3 +1,23 @@
 {
-
+  "personInfoText":"Personal Information",
+  "skillText":"Skill",
+  "portText":"Portfolio",
+  "lanText":"Language",
+  "enText":"English",
+  "chText":"Chinese",
+  "myResumeText":"My Resume",
+  "aboutMeText":"&nbsp;About Me",
+  "wellText":"Well come to my personal webpage!<br/>The webpage is still being built. I will add more information about my portfolio.",
+  "nameText":"Name",
+  "nameContentText":"Jiuling Tang",
+  "hometownText":"Hometown",
+  "hometownContentText":"Chongqing - China",
+  "locationText":"Location",
+  "locationContentText":"Montreal - Canada",
+  "educationText":"&nbsp;Education",
+  "degreeText":["Bachelor of Mathematics<br/> University of Electronic Science and Technology of China, Chengdu, China  ",
+                  "Master of Computer  Science<br/> Concordia University, Montreal, Canada "],
+  "algorithmText":"Algorithm",
+  "descriptionText":"Description",
+  "technologyText":"Technologies"
 }

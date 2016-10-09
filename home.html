@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Personal Webpage</title>
+<title></title>
 <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css">
 <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
 <link type="text/css" rel="stylesheet" href="css/custom.css">
@@ -14,46 +14,45 @@
             	<img src="resource/image/logo.gif" alt="logo" style="height:100px"  class="navbar-brand">
             </div>	
             <ul style="margin-top:30px;" class="nav navbar-nav firstBar" >
-           	  <li class="barli"><a href="#personalInfo"class="scroll"><span class="bara">Personal Information</span></a></li>
-           	  <li class="barli"><a href="#skill" class="scroll"><span class="bara">Skill</span></a></li>
-           	  <li class="barli"><a href="#portfolio" class="scroll"><span class="bara">Portfolio</span></a></li>
+           	  <li class="barli"><a href="#personalInfo"class="scroll"><span class="bara personInfoText"></span></a></li>
+           	  <li class="barli"><a href="#skill" class="scroll"><span class="bara skillText"></span></a></li>
+           	  <li class="barli"><a href="#portfolio" class="scroll"><span class="bara portText"></span></a></li>
             </ul>
              <ul style="margin-top:60px;margin-right:-100px" class="nav navbar-nav navbar-right" >
-              <li class="lanlable" ><span>Language:</span></li>
-           	  <li ><button class="btn btn-default enbutton visited"><span>English</span></button></li>
-           	  <li ><button class="btn btn-default chbutton"><span>Chinese</span></button></li>
+              <li class="lanlable"  ><span class="lanText">Language</span>:</li>
+           	  <li ><button class="btn btn-default enbutton lanButton visited" data-lan="en"><span class="enText"></span></button></li>
+           	  <li ><button class="btn btn-default chbutton lanButton" data-lan="ch"><span class="chText">Chinese</span></button></li>
             </ul>
   		</div>
 	</nav>
     <div  id="personalInfo" class="pinfdiv container" >
     	<div class="pinftitle" >
-        	<h4 >
+        	<h4 class="personInfoText" >
             	Personal Information
             </h4>
         </div>
-		<a href="./resource/resume.pdf" class="cvLink">My Resume</a>
+		<a href="./resource/resume.pdf" class="cvLink myResumeText">My Resume</a>
         <div id="about" class="clearfix">
 			<!-- Introduction -->
 			<section id="introduction" class="clearfix">
-				<h1>&nbsp;About me</h1>
-				<p>Well come to my personal webpage!<br/>
-                The webpage is still being built. I will add more information about my portfolio.</p>
+				<h1 class="aboutMeText"></span></h1>
+				<p class="wellText"></p>
 				<ul class="info">
-					<li><span>Name</span> : Jiuling Tang</li>
-                    <li><span>Hometown</span> : Chongqing - China</li>
-					<li><span>Location</span> : Montreal - Canada</li>
+					<li><span class="nameText"></span> : <span class="nameContentText"></span></li>
+                    <li><span class="hometownText"></span> : <span class="hometownContentText"></span></li>
+					<li><span class="locationText"></span> : <span class="locationContentText"></span></li>
 				</ul>
 			 </section>
 			<section id="education">
-					<h1>&nbsp;Education</h1>
+					<h1 class="educationText"></h1>
 						<hgroup>
-                        	<h6>2010-2014</h6>
-							<h4>Bachelor of Mathematics<br/> University of Electronic Science and Technology of China, Chengdu, China  </h4>
+                        	<h6 >2010-2014</h6>
+							<h4 class="degreeText"></h4>
 						</hgroup>
 						<br />
 						<hgroup>
-                        	<h6>2014-2016</h6>
-							<h4>Master of Computer  Science<br/>Concordia University, Montreal, Canada </h4>
+                        	<h6 >2014-2016</h6>
+							<h4 class="degreeText"></h4>
 							
 						</hgroup>
 						
@@ -62,8 +61,8 @@
     </div>
      <div id="skill" class="skilldiv container" >
     	<div class="skilltitle" >
-        	<h4 >
-            	Skill
+        	<h4 class="skillText" >
+
             </h4>
         </div>
         <div class="skillitemdiv">
@@ -115,7 +114,7 @@
 			</div>
          </div>  
          <div class="skillitemdiv">
-        	<h4>Algorithm</h4>
+        	<h4 class="algorithmText"></h4>
 			<div class="progress">
 				<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
 					<span class="sr-only">80% Complete (success)</span>
@@ -165,7 +164,7 @@
     </div>
     <div  id="portfolio" class="portdiv container" >
     	<div class="porttitle" >
-        	<h4 >
+        	<h4 class="portText" >
             	Portfolio
             </h4>
          </div>
@@ -221,10 +220,10 @@
                   	
                   	</div>
                   <div style="display:inline-block;width:15%;">
-                  	<h4 >Description</h4>
+                  	<h4 class="descriptionText"></h4>
                   	<span id="description">This is a web appication. There are two kinds of users, student and administrator. Student can register/drop courseand check their grade. Administrator can register students, add grade for students, add/drop courses for students and add courses.</span>
                     <br/>
-                    <h4 >Technologies</h4>
+                    <h4 class="technologyText"></h4>
                     <span id="technologies">Java, JSP, Java Servlet, HTML, CSS, JavaScript, Jquery, AJAX, Bootstrap</span>
                   </div>
                </div>   

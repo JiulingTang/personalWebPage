@@ -1,0 +1,23 @@
+{
+  "personInfoText":"个人信息",
+  "skillText":"技术",
+  "portText":"作品",
+  "lanText":"语言",
+  "enText":"英语",
+  "chText":"中文",
+  "myResumeText":"我的简历",
+  "aboutMeText":"&nbsp;关于我",
+  "wellText":"Well come to my personal webpage!<br/>The webpage is still being built. I will add more information about my portfolio.",
+  "nameText":"名字",
+  "nameContentText":"唐久凌",
+  "hometownText":"家乡",
+  "hometownContentText":"重庆 - 中国",
+  "locationText":"地点",
+  "locationContentText":"蒙特利尔 - 加拿大",
+  "educationText":"&nbsp;教育",
+  "degreeText":["Bachelor of Mathematics<br/> University of Electronic Science and Technology of China, Chengdu, China  ",
+    "Master of Computer  Science<br/> Concordia University, Montreal, Canada "],
+  "algorithmText":"算法",
+  "descriptionText":"描述",
+  "technologyText":"使用技术"
+}
